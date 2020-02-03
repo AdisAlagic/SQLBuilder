@@ -1,3 +1,5 @@
+package com.adisalagic.sqlbuilder;
+
 public class ArgsBuilder {
 	private String where = "";
 	private boolean hasWhere = false;

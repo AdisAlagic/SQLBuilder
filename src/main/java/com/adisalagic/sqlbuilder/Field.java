@@ -1,3 +1,5 @@
+package com.adisalagic.sqlbuilder;
+
 public class Field {
 	private String  name;
 	private String  type;
@@ -7,7 +9,7 @@ public class Field {
 	private boolean virtual = false;
 	private String  comment;
 
-	Field(String name, String type) {
+	public Field(String name, String type) {
 		this.name = name;
 		this.type = type;
 		isPrimaryKey = false;

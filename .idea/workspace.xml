@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c1de14e-38ef-4f34-80a2-22487e569295" name="Default Changelist" comment="" />
+    <list default="true" id="7c1de14e-38ef-4f34-80a2-22487e569295" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArgsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adisalagic/sqlbuilder/ArgsBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adisalagic/sqlbuilder/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adisalagic/sqlbuilder/SQLBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VariableType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adisalagic/sqlbuilder/VariableType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SQLBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SQLBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SQLBuilder-1.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SQLBuilder-1.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ArgsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Field.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SQLBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VariableType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SQLBuilderTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SQLBuilderTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-SQLBuilderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-SQLBuilderTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/SQLBuilder.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SQLBuilderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SQLBuilderTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -21,13 +46,20 @@
     <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="printErrorStackTraces" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1Wbjx7b5gHiyXyqFt1g64lzgg6P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,34 +71,25 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SQLBuilderTest">
+  <component name="RunManager" selected="JUnit.SQLBuilderTest.testInsert">
     <configuration name="SQLBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SQLBuilder" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SQLBuilderTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQLBuilderTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SQLBuilder" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SQLBuilderTest" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +109,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SQLBuilderTest" />
       <option name="METHOD_NAME" value="testInnerJoin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQLBuilderTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SQLBuilder" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SQLBuilderTest" />
+      <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,18 +148,18 @@
     <list>
       <item itemvalue="JUnit.Tests" />
       <item itemvalue="JUnit.SQLBuilderTest" />
-      <item itemvalue="JUnit.SQLBuilderTest.testDelete" />
       <item itemvalue="JUnit.SQLBuilderTest.testDeleteTables" />
       <item itemvalue="JUnit.SQLBuilderTest.testUpdate" />
       <item itemvalue="JUnit.SQLBuilderTest.testInnerJoin" />
+      <item itemvalue="JUnit.SQLBuilderTest.testInsert" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SQLBuilderTest.testInsert" />
         <item itemvalue="JUnit.SQLBuilderTest" />
         <item itemvalue="JUnit.SQLBuilderTest.testInnerJoin" />
         <item itemvalue="JUnit.SQLBuilderTest.testUpdate" />
         <item itemvalue="JUnit.SQLBuilderTest.testDeleteTables" />
-        <item itemvalue="JUnit.SQLBuilderTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +190,17 @@
       <workItem from="1579589808669" duration="13667000" />
       <workItem from="1579627496123" duration="91000" />
       <workItem from="1579627616655" duration="7453000" />
-      <workItem from="1579672075698" duration="7568000" />
+      <workItem from="1579672075698" duration="12723000" />
+      <workItem from="1579763105767" duration="75000" />
+      <workItem from="1579763433000" duration="16000" />
+      <workItem from="1580301974644" duration="51000" />
+      <workItem from="1580644499568" duration="111000" />
+      <workItem from="1580645571117" duration="91000" />
+      <workItem from="1580646384482" duration="4000" />
+      <workItem from="1580646409716" duration="37000" />
+      <workItem from="1580646559699" duration="114000" />
+      <workItem from="1580647318368" duration="196000" />
+      <workItem from="1580707214585" duration="2181000" />
     </task>
     <servers />
   </component>
@@ -189,22 +232,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="526" y="172" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1579680038770" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1579680059498">
+    <state x="225" y="26" key="CommitChangelistDialog2" timestamp="1580708884189">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1579680059498" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1579680059498">
+    <state x="225" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1580708884189" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1580712173687">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1579680059498" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1579680059498">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1580712173687" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1580712173687">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1579680059498" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1579680059498">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1580712173687" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1580712173686">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1579680059498" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1580712173686" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1580712173687">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1580712173687" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1579635214082">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -225,14 +272,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="299" y="88" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1579524009985" />
-    <state x="277" y="16" key="SettingsEditor" timestamp="1579630335647">
+    <state x="277" y="16" key="SettingsEditor" timestamp="1579683328190">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="16" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1579630335647" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1579672075683">
+    <state x="277" y="16" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1579683328190" />
+    <state x="361" y="166" key="Vcs.Push.Dialog.v2" timestamp="1580712124499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1579672075683" />
+    <state x="361" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1580712124499" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1580707215700">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1580707215700" />
     <state x="526" y="335" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579524028503">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -250,7 +301,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ArgsBuilder.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/adisalagic/sqlbuilder/ArgsBuilder.java</url>
           <line>37</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>

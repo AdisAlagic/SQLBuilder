@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="0" name="SQLBuilderTest" time="0.02" errors="0" skipped="0">
+<testsuite tests="15" failures="0" name="SQLBuilderTest" time="0.021" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10"/>
@@ -46,7 +46,7 @@
     <property name="java.class.path" value="C:\Users\AdisAlagic\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6015.39\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.2 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.2 --errors install"/>
     <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.5.10-hotspot"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,19 +64,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="SQLBuilderTest" name="testSimpleSelectFields" time="0.004"/>
-  <testcase classname="SQLBuilderTest" name="testSimpleSelectFieldsWithArgs" time="0.001"/>
-  <testcase classname="SQLBuilderTest" name="testSelectWithArgsAnd" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testSelectFields" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testCreateDatabase" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testDelete" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testCreateDataBase" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testDeleteTables" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testSelectWithArgsAnd" time="0.005"/>
+  <testcase classname="SQLBuilderTest" name="testSimpleSelectFields" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testSimpleSelectFieldsWithArgs" time="0"/>
   <testcase classname="SQLBuilderTest" name="testSimpleSelect" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testSelectWithAgs" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testSelectAll" time="0"/>
-  <testcase classname="SQLBuilderTest" name="testCreateTable" time="0.001"/>
+  <testcase classname="SQLBuilderTest" name="testSelectFields" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testCreateTable" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testCreateDataBase" time="0"/>
   <testcase classname="SQLBuilderTest" name="testSQLInjection" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testUpdate" time="0.001"/>
   <testcase classname="SQLBuilderTest" name="testInnerJoin" time="0.014"/>
-  <testcase classname="SQLBuilderTest" name="testUpdate" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testDeleteTables" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testCreateDatabase" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testSelectAll" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testSelectWithAgs" time="0"/>
+  <testcase classname="SQLBuilderTest" name="testDelete" time="0.001"/>
 </testsuite>

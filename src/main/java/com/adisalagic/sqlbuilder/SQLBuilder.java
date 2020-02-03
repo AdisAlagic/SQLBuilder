@@ -1,3 +1,5 @@
+package com.adisalagic.sqlbuilder;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,6 +11,7 @@ public class SQLBuilder {
 	private static String CREATE_TABLE    = "CREATE TABLE %name_of_table% ( %hash_map% )";
 	private static String DELETE          = "DELETE FROM %table% WHERE %condition%";
 	private static String UPDATE          = "UPDATE %tables% SET %update_fields% WHERE %condition%";
+	private static String INSERT = "INSERT INTO %table_name%";
 
 	private String query = "";
 
@@ -36,7 +39,7 @@ public class SQLBuilder {
 	 * DOES NOT OVERWRITE THE LAST STATEMENT! See {@link SQLBuilder#endStatement}
 	 * @param fields The fields as <code>String[]</code> array
 	 * @param tables The tables as <code>String[]</code> array
-	 * @return SQLBuilder class with Select statement
+	 * @return com.adisalagic.sqlbuilder.SQLBuilder class with Select statement
 	 */
 	public SQLBuilder Select(String[] fields, String[] tables) {
 		query += SELECT;
@@ -55,7 +58,7 @@ public class SQLBuilder {
 	 * Super simple 'Select' statement, which uses <code>*</code> to select everything from tables<br>
 	 * DOES NOT OVERWRITE THE LAST STATEMENT! See {@link SQLBuilder#endStatement}
 	 * @param tables The tables as <code>String[]</code> array
-	 * @return SQLBuilder class with this statement
+	 * @return com.adisalagic.sqlbuilder.SQLBuilder class with this statement
 	 */
 	public SQLBuilder Select(String[] tables) {
 		query += SELECT_ALL;
@@ -70,7 +73,7 @@ public class SQLBuilder {
 	 * Ultra simple 'Select' statement. Selects everything from table<br>
 	 * DOES NOT OVERWRITE THE LAST STATEMENT! See {@link SQLBuilder#endStatement}
 	 * @param table The table as <code>String</code>
-	 * @return SQLBuilder class with this statement
+	 * @return com.adisalagic.sqlbuilder.SQLBuilder class with this statement
 	 */
 	public SQLBuilder Select(String table) {
 		Select(new String[]{table});
@@ -82,7 +85,7 @@ public class SQLBuilder {
 	 * DOES NOT OVERWRITE THE LAST STATEMENT! See {@link SQLBuilder#endStatement}
 	 * @param fields The fields as <code>String[]</code> array
 	 * @param table The table with data
-	 * @return SQLBuilder class with this statement
+	 * @return com.adisalagic.sqlbuilder.SQLBuilder class with this statement
 	 */
 	public SQLBuilder Select(String[] fields, String table) {
 		Select(fields, new String[]{table});
@@ -261,6 +264,23 @@ public class SQLBuilder {
 		return builder.toString();
 	}
 
+	private String insertInlineHashMap(HashMap<String, Object> map){
+		String srt = " ( %next_key% ) VALUES ( %next_value% )";
+		int count = 1;
+		for (Map.Entry<String, Object> entry : map.entrySet()){
+			String key   = entry.getKey().replaceAll("'", "\\\\\\\\\'");
+			String value = entry.getValue().toString().replaceAll("'", "");
+			if (count == map.size()){
+				srt = srt.replaceAll("%next_key%", key);
+				srt = srt.replaceAll("%next_value%", value);
+			}else {
+				srt = srt.replaceAll("%next_key%", key + ", %next_key%");
+				srt = srt.replaceAll("%next_value%", value + " %next_value%");
+			}
+		}
+		return srt;
+	}
+
 	/**
 	 * 'Update' statement<br>
 	 * DOES NOT OVERWRITE THE LAST STATEMENT! See {@link SQLBuilder#endStatement}
@@ -292,6 +312,14 @@ public class SQLBuilder {
 		this.Update(new String[]{table}, fields, builder);
 		return this;
 	}
+
+	public SQLBuilder Insert(String table, HashMap<String, Object> fields){
+		query += INSERT;
+		query = query.replaceAll("%table_name%", table);
+		query += insertInlineHashMap(fields);
+		return this;
+	}
+	
 
 	//Python - го(а)вно
 }

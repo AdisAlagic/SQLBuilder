@@ -1,3 +1,7 @@
+import com.adisalagic.sqlbuilder.ArgsBuilder;
+import com.adisalagic.sqlbuilder.Field;
+import com.adisalagic.sqlbuilder.SQLBuilder;
+import com.adisalagic.sqlbuilder.VariableType;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
@@ -43,8 +47,8 @@ public class SQLBuilderTest extends TestCase {
 	}
 
 //	public void testSelectBigString(){
-//		SQLBuilder builder = new SQLBuilder();
-//		ArgsBuilder builder1 = new ArgsBuilder();
+//		com.adisalagic.sqlbuilder.SQLBuilder builder = new com.adisalagic.sqlbuilder.SQLBuilder();
+//		com.adisalagic.sqlbuilder.ArgsBuilder builder1 = new com.adisalagic.sqlbuilder.ArgsBuilder();
 //		builder1.addCondition("? > A AND B < ? OR ? < 4 AND B < ?", true ,"a", "b", "c", "d");
 //		builder.Select(new String[]{"t1"}, builder1);
 //		assertEquals("SELECT * FROM t1 WHERE a > A AND B < 'b' OR c < 4 AND B < 'd';", builder.toString());
@@ -127,5 +131,13 @@ public class SQLBuilderTest extends TestCase {
 				.innerJoin("t2", "f3", "f4");
 		builder.Select("t1", argsBuilder);
 		assertEquals("SELECT * FROM t1 INNER JOIN t1 ON f1=f2 INNER JOIN t2 ON f3=f4;", builder.toString());
+	}
+
+	public void testInsert(){
+		SQLBuilder sqlBuilder = new SQLBuilder();
+		HashMap<String, Object> fields = new HashMap<>();
+		fields.put("a1", "b1");
+		sqlBuilder.Insert("t1", fields);
+		assertEquals("INSERT INTO t1 ( a1 ) VALUES ( b1 );", sqlBuilder.toString());
 	}
 }

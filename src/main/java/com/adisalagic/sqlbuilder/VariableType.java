@@ -1,3 +1,5 @@
+package com.adisalagic.sqlbuilder;
+
 /**
  * The class which defines variable types in MySQL system
  */
